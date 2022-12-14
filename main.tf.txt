@@ -1,0 +1,11 @@
+# Provider for Azure Central US
+provider "azurerm" {
+  features {}
+}
+# Create a resource group in Centeral US region 
+
+resource "azurerm_resource_group" "HnP-DR-RG" {
+  name = pipe-rg1
+  location = "Central US"
+
+}
